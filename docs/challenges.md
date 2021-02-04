@@ -28,22 +28,112 @@ This makes sense as they're not valid React native props. If you need all of the
 
 - Writing platform specific conditions isn't that bad and sometimes essential, but using a div means you won't be able to use RN props e.g. (StyleSheet, onLayout, Animated).
 
-### Let us take an example.
+### Example
 
-- Building a radio group component on React native.
+- Building a custom radio group using react-native-aria.
 
-**Todo**
+### Implementation
 
-1. Show an example of creating a custom radio button.
-2. Feature downsides and accessibility issues of using the same component on react native web.
-3. Describe how it can be solved using react-native-aria useRadioHook.
+1. RadioGroup
 
-<!-- #### Getting most out of react-native-aria on react-native-web
+- Define RadioContext (Using context will enable `<Radio />` access the `<RadioGroup />` state).
+- [useRadioGroupState](https://react-spectrum.adobe.com/react-stately/useRadioGroupState.html) will manage the group state.
+- useRadioGroup returns [React Aria](https://react-spectrum.adobe.com/react-aria/useRadioGroup.html) for web and [React accessibility](https://reactnative.dev/docs/accessibility) props for iOS/Android.
 
-1. Semantic markup
+```
+import { useRadioGroupState } from "@react-stately/radio";
+import { useRadio, useRadioGroup } from "@react-native-aria/radio";
+import { Text, View } from "react-native";
 
-   Since there are just View/Text primitive components in RN, semantic markup should be achieved using [Expo HTML elements](https://github.com/expo/expo/tree/master/packages/html-elements)
+let RadioContext = React.createContext();
 
-### React native iOS/Android.
+export function RadioGroup(props) {
+  let { children, label } = props;
+  let state = useRadioGroupState(props);
+  let { radioGroupProps, labelProps } = useRadioGroup(props, state);
 
-1. RN doesn't ship with a Radio/Checkbox component. -->
+  return (
+    <View {...radioGroupProps}>
+      <Text {...labelProps}>
+        {label}
+      </Text>
+      <RadioContext.Provider
+        value={{
+          isDisabled: props.isDisabled,
+          isReadOnly: props.isReadOnly,
+          state,
+        }}
+      >
+        {children}
+      </RadioContext.Provider>
+    </View>
+  );
+}
+
+```
+
+2. Radio
+
+- Using state from RadioGroup Context.
+- useRadio returns [React Aria](https://react-spectrum.adobe.com/react-aria/useRadioGroup.html) for web and [React accessibility](https://reactnative.dev/docs/accessibility) props for iOS/Android.
+- For web, we wrap the radio into `<label />`. This gives us [web accessibility](https://www.w3.org/TR/wai-aria-practices-1.1/examples/radio/radio-1/radio-1.html) for free.
+  Still we have full control over styling on `radioContent`.
+
+```
+import { VisuallyHidden } from "@react-aria/visually-hidden";
+import { useRadio } from "@react-native-aria/radio";
+
+export function Radio(props) {
+  let { state, isReadOnly, isDisabled } = React.useContext(RadioContext);
+
+  const inputRef = React.useRef(null);
+
+  let { inputProps } = useRadio(
+    { isReadOnly, isDisabled, ...props },
+    state,
+    inputRef
+  );
+
+  let isSelected = state.selectedValue === props.value;
+  const icon = isSelected ? "radiobox-marked" : "radiobox-blank";
+
+  const radioContent = (
+     <View style={{ flexDirection: "row", alignItems: "center" }}>
+         <View>
+            <MaterialCommunityIcons size={30} color={"#000"} name={icon} />
+         </View>
+         <Text>{props.children}</Text>
+      </View>
+  )
+
+  return (
+    <>
+      {Platform.OS === "web" ? (
+        <label>
+          <VisuallyHidden>
+            <input {...inputProps} ref={inputRef}></input>
+          </VisuallyHidden>
+            {radioContent}
+        </label>
+      ) : (
+        <Pressable {...inputProps}>
+            {radioContent}
+        </Pressable>
+      )}
+    </>
+  );
+}
+```
+
+### Usage
+
+```
+const RadioExample = () => {
+  return (
+    <RadioGroup label="Favorite pet">
+      <Radio value="dogs">Dogs</Radio>
+      <Radio value="cats">Cats</Radio>
+    </RadioGroup>
+  );
+};
+```
