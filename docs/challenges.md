@@ -20,11 +20,13 @@ Below props [are not whitelisted](https://github.com/necolas/react-native-web/bl
 
 - role (needs to be passed as accessibilityRole), tabIndex (should be set via ref or using focusable/accessible), id (needs to be passed as nativeID).
 
-- [onKeyDown cannot be passed to Pressable](https://github.com/necolas/react-native-web/issues/1862) - Can be set using ref.
+- [onKeyDown cannot be passed to Pressable](https://github.com/necolas/react-native-web/issues/1862) - should be set using ref.
 
 This makes sense as they're not valid React native props. If you need all of the above, simply use a div or any html element from React DOM and react-native-web will not complain.
 
-- But this will require some conditional coding when you want to create a component library that works on web and mobile.
+- But this will require platform detection code when you want to create a component library that works on web and mobile.
+
+- Writing platform specific conditions isn't that bad and sometimes essential, but using a div means you won't be able to use RN props e.g. (StyleSheet, onLayout, Animated).
 
 ### Let us take an example.
 
