@@ -2,13 +2,13 @@ module.exports = {
   title: "React Native Aria",
   tagline:
     "Component behaviour/accessibility hooks for React native web and React native (iOS/Android)",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://intergalacticspacehighway.github.io",
+  baseUrl: "/react-native-aria/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "geekyants", // Usually your GitHub org/user name.
+  projectName: "react-native-aria", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "React Native Aria",

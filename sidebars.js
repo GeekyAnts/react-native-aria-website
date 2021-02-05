@@ -4,11 +4,11 @@ module.exports = {
     "Web/Android/iOS": [
       "useFocusRing",
       "useHover",
-      "useCheckbox",
       "useOverlayPosition",
+      "Checkbox",
       "Radio",
       "Switch",
-      "useMenu",
+      "Menu",
       "ToggleButton",
     ],
   },

@@ -1,6 +1,6 @@
 ---
-id: useMenu
-title: useMenu
+id: Menu
+title: Menu
 ---
 
 Provides the behavior and accessibility implementation for a checkbox component. Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.
