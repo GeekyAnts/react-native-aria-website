@@ -17,3 +17,5 @@ Refer for usage [Checkbox](https://react-spectrum.adobe.com/react-aria/Checkbox.
 <script async src="https://snack.expo.io/embed.js"></script> -->
 
 <iframe src="https://snack.expo.io/embedded/@nishanbende/checkbox?preview=true&platform=web&theme=dark" height="500" width="100%" />
+
+- [CheckboxAria](checkbox/modules.md)

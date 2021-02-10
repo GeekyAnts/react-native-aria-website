@@ -9,7 +9,7 @@ title: Challenges
 <!-- - This gives us access to components like Modal/Virtualized list (FlatList) out of the box with react-native-web. -->
 - This enables us to create components like checkbox/radio and reuse them on web without breaking the UI.
 - However, the challenging part is to get the correct accessibility behavior.
-- React native web does take this into [consideration](https://necolas.github.io/react-native-web/docs/?path=/docs/guides-accessibility--page) and maps [RN accessibility](https://reactnative.dev/docs/accessibility) props to equivalent ARIA. But getting the keyboard navigation right still requires manual efforts.
+- React native web does take this into [consideration](https://necolas.github.io/react-native-web/docs/?path=/docs/guides-accessibility--page) and maps [RN accessibility](https://reactnative.dev/docs/accessibility) props to equivalent ARIA. But getting the keyboard navigation right still requires efforts.
 
 ### Why not directly use React aria with react native web?
 
@@ -21,17 +21,12 @@ Below props [are not whitelisted](https://github.com/necolas/react-native-web/bl
 
 - [onKeyDown cannot be passed to Pressable](https://github.com/necolas/react-native-web/issues/1862) - should be set using ref.
 
-This makes sense as they're not valid React native props. If you need all of the above, simply use a div or any html element from React DOM and react-native-web will not complain.
+This makes sense as they're not valid React native props. If one needs all of the above, one can simply use an appropriate html element from React DOM and react-native-web will not complain. 
+But using something outside of React native means you won't have access to RN props. e.g. (onLayout, Animated).
 
-- But this will require platform detection code when you want to create a component library that works on web and mobile.
+- React native Aria ensures that hooks from [React Aria](https://react-spectrum.adobe.com/react-aria/) works as expected on React native web and provides accessibility equavivalents on React native.
 
-- Writing platform specific conditions isn't that bad and sometimes essential, but using a div means you won't be able to use RN props e.g. (StyleSheet, onLayout, Animated).
-
-:::note
-Stylesheet can still be used with a div or any html element using [this approach](https://necolas.github.io/react-native-web/docs/?path=/docs/guides-unstable-uses--page).
-:::
-
-### Example
+<!-- ### Example
 
 - Building a custom radio group using react-native-aria.
 
@@ -139,4 +134,4 @@ const RadioExample = () => {
     </RadioGroup>
   );
 };
-```
+``` -->

@@ -1,7 +1,7 @@
 ---
 id: why
 title: Why React Native Aria?
-sidebar_label: Why?
+sidebar_label: Why React Native Aria?
 slug: /
 ---
 
@@ -22,3 +22,13 @@ React native aria aims to solve this by providing low level primitives to create
 Current proof of concept aims to solve this for web and mobile (Android/iOS).
 
 For other platforms (macOS, Windows), we're exploring possibilities of using Native components that can be customized.
+
+
+## Approach
+
+- For web, we've used [React Aria](https://react-spectrum.adobe.com/react-aria/index.html) which provides [ARIA](https://www.w3.org/TR/wai-aria-1.1/) attributes and behaviour (keyboard navigation) for commonly used components.
+
+- For iOS/Android, we've created similar hooks like React Aria but instead of web-supported ARIA/behaviour, it returns [React Native supported accessibility props](https://reactnative.dev/docs/accessibility).
+
+About the architecture - [React Spectrum](https://react-spectrum.adobe.com/architecture.html)
+
