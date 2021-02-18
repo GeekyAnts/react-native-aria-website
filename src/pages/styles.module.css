@@ -21,17 +21,31 @@
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 5rem 0;
   width: 100%;
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+}
+
+.exampleWrapper {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.exampleDescription {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.exampleSection {
+  margin-bottom: 5rem;
 }

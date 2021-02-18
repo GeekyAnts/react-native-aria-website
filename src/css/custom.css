@@ -15,15 +15,23 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
-  --ifm-navbar-link-hover-color: #fff;
   --ifm-footer-link-hover-color: #fff;
-
   --trial-color: rgb(96, 203, 230);
+  /* --ifm-navbar-padding-vertical */
+  /* --ifm-navbar-padding-horizontal: 10rem; */
+}
+
+.navbar-sidebar__brand {
+  background-color: var(--ifm-color-primary);
+}
+.navbar__toggle {
+  color: white;
 }
 
 .button.button--secondary.button--outline:not(.button--active):not(:hover) {
   --ifm-font-color-base: #fff;
 }
+
 .navbar {
   background-color: var(--ifm-color-primary);
 }
@@ -31,6 +39,10 @@
 .navbar {
   --ifm-link-hover-color: #fff;
   --ifm-navbar-link-color: #fff;
+}
+
+.navbar__inner {
+  --ifm-navbar-link-hover-color: #fff;
 }
 
 .hero--primary {
@@ -48,6 +60,11 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.hero__subtitle--left,
+.hero__title--left {
+  text-align: left;
+}
+
 /* Dark theme overrides */
 html[data-theme="dark"] {
   --ifm-color-primary: #221a52;
@@ -59,4 +76,17 @@ html[data-theme="dark"] {
 
 html[data-theme="dark"] .table-of-contents__link {
   --ifm-color-primary: var(--trial-color);
+}
+
+html[data-theme="dark"] .navbar__link:hover,
+html[data-theme="dark"] .navbar__link--active {
+  color: var(--trial-color);
+}
+
+.react-toggle-track {
+  background-color: #000 !important;
+}
+
+.navbar__inner {
+  padding: 0 1rem;
 }

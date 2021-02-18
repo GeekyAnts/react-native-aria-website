@@ -1,8 +1,8 @@
 module.exports = {
   title: "React Native ARIA",
   tagline:
-    "Component behaviour/accessibility hooks for React native web and React native (iOS/Android)",
-  url: "https://intergalacticspacehighway.github.io",
+    "React Native ARIA handles behaviour, accessibility and interactions so you can implement custom components and design systems for Android, iOS and Web",
+  url: "https://geekyants.github.io",
   baseUrl: "/react-native-aria/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -21,10 +21,16 @@ module.exports = {
           to: "docs/",
           activeBasePath: "docs",
           label: "Docs",
-          position: "left",
+          position: "right",
         },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href:
+            "https://geekyants.com/hire?utm_source=reactnativearia&utm_medium=header&utm_campaign=reactnativearia",
+          label: "Hire Us",
+          position: "right",
+        },
+        {
+          href: "https://github.com/GeekyAnts/react-native-aria",
           label: "GitHub",
           position: "right",
         },
@@ -37,30 +43,24 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              label: "Style Guide",
+              label: "Getting Started",
               to: "docs/",
             },
           ],
         },
         {
-          title: "Community",
+          title: "More",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "GitHub",
+              href: "https://github.com/GeekyAnts/react-native-aria",
             },
           ],
         },
+        {
+          title: "Built with ❤️ by GeekyAnts.",
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
