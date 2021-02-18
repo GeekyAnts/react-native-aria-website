@@ -4,13 +4,13 @@ module.exports = {
       type: "category",
       collapsed: false,
       label: "Introduction",
-      items: ["why", "challenges"],
+      items: ["introduction", "challenges", "installation", "additionalResources"],
     },
     {
       type: "category",
       collapsed: false,
       label: "Forms",
-      items: ["useCheckbox","useCheckboxGroup","useRadioGroup", "useSwitch"],
+      items: ["useCheckbox", "useCheckboxGroup", "useRadioGroup", "useSwitch"],
     },
     {
       type: "category",
