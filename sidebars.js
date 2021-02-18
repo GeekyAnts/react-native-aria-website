@@ -14,22 +14,26 @@ module.exports = {
     },
     {
       type: "category",
+      collapsed: false,
       label: "Buttons",
       items: ["useToggleButton"],
     },
     {
       type: "category",
+      collapsed: false,
       label: "Interactions",
       items: ["useHover", "useFocusRing"],
     },
     {
       type: "category",
+      collapsed: false,
       label: "Overlays",
       items: ["useOverlayPosition"],
     },
     {
       type: "category",
       label: "Collections",
+      collapsed: false,
       items: ["useMenu"],
     },
 
