@@ -24,14 +24,14 @@ module.exports = {
           position: "right",
         },
         {
-          href:
-            "https://geekyants.com/hire?utm_source=reactnativearia&utm_medium=header&utm_campaign=reactnativearia",
-          label: "Hire Us",
+          href: "https://github.com/GeekyAnts/react-native-aria",
+          label: "GitHub",
           position: "right",
         },
         {
-          href: "https://github.com/GeekyAnts/react-native-aria",
-          label: "GitHub",
+          href:
+            "https://geekyants.com/hire?utm_source=reactnativearia&utm_medium=header&utm_campaign=reactnativearia",
+          label: "Hire Us",
           position: "right",
         },
       ],
@@ -58,7 +58,13 @@ module.exports = {
           ],
         },
         {
-          title: "Built with ❤️ by GeekyAnts.",
+          title: " ",
+          items: [
+            {
+              label: "Built with ❤️ by GeekyAnts ",
+              href: "https://www.geekyants.com",
+            },
+          ],
         },
       ],
     },
