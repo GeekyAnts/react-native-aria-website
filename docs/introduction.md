@@ -1,7 +1,7 @@
 ---
 id: introduction
-title: What is React Native Aria?
-sidebar_label: What is React Native Aria?
+title: What is React Native ARIA?
+sidebar_label: What is React Native ARIA?
 slug: /
 ---
 
@@ -11,7 +11,7 @@ A library of [React Hooks](https://reactjs.org/docs/hooks-intro.html) for react-
 
 In a utopian world, we would love a component library that works on all the platforms without limiting its styling, behavior, and accessibility. In reality, this can be a bit tricky.
 
-With the advent of React Native, it has raised our expectations to build UIs across all platforms while reusing as much code as possible. However, RN ships with a very lean core with a lot of room for customizability. This means that we need to build our primitive components using [View](https://reactnative.dev/docs/view) and [Pressable](https://reactnative.dev/docs/pressable) or install third-party packages (like the one you're looking at). This is in contrast to the native development world where component APIs are shipped in the SDKs like [UI Menu in iOS](https://developer.apple.com/documentation/uikit/uimenu).
+With the advent of React Native, it has raised our expectations to build UIs across all platforms while reusing as much code as possible. However, RN ships with a very lean core with a lot of room for customizability. This means that we need to build our primitive components using [View](https://reactnative.dev/docs/view) and [Pressable](https://reactnative.dev/docs/pressable) or install third-party packages (like the one you're looking at) or create [native views](https://reactnative.dev/docs/native-components-android). This is in contrast to the native development world where component APIs are shipped in the SDKs like [UI Menu in iOS](https://developer.apple.com/documentation/uikit/uimenu).
 
 React Native ARIA aims to solve this by providing low level primitives to create a component or a primitive library that works on all platforms with the scope of React native.
 

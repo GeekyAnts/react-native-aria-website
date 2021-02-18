@@ -11,6 +11,15 @@ It's possible to write semantic HTML using only React Native Web [as mentioned h
 
 However, you should definitely checkout [this awesome package](https://github.com/expo/expo/tree/master/packages/html-elements) from the expo team which makes it much easier.
 
-- **Modal:**
 
-Since 0.14, React Native Web ships with a [Modal](https://necolas.github.io/react-native-web/docs/modal/) component. This removes the need to write a custom Modal (unless you have a specific use-case).
+- **Accessibility documentation:**
+
+[React Native Web](https://necolas.github.io/react-native-web/docs/accessibility/)
+
+[React Native - Android/iOS](https://reactnative.dev/docs/accessibility)
+
+[ARIA Specification](https://www.w3.org/TR/wai-aria-1.1/)
+
+- **Tutorials**
+
+[Free course on Web Accessibility](https://www.udacity.com/course/web-accessibility--ud891?autoenroll=true) by Google
