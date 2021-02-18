@@ -27,5 +27,3 @@ For example:
 Additionally, future versions of React Native Web will deprecate the usage of aria-\* attributes as [mentioned here](https://github.com/necolas/react-native-web/releases/tag/0.15.0). Since v0.15, each aria-\* attribute has equivalent accessibility\* [mapping](https://necolas.github.io/react-native-web/docs/accessibility/).
 
 React Native ARIA ensures that hooks from [React Aria](https://react-spectrum.adobe.com/react-aria/) work as expected on React Native Web and provide [accessibility equivalents](https://reactnative.dev/docs/accessibility) when used on iOS and Android.
-
-eact Native Web enables devs to render React Native components on the web. This allows us to create components for Android, iOS and Web in a single codebase. However, the challenging part is to get the correct accessibility behaviour.
