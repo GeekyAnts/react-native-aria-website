@@ -1,5 +1,5 @@
 module.exports = {
-  title: "React Native Aria",
+  title: "React Native ARIA",
   tagline:
     "Component behaviour/accessibility hooks for React native web and React native (iOS/Android)",
   url: "https://intergalacticspacehighway.github.io",
@@ -11,10 +11,10 @@ module.exports = {
   projectName: "react-native-aria", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "React Native Aria",
+      title: "React Native ARIA",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
         {

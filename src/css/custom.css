@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #4b3ab1;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -15,6 +15,30 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  --ifm-navbar-link-hover-color: #fff;
+  --ifm-footer-link-hover-color: #fff;
+
+  --trial-color: rgb(96, 203, 230);
+}
+
+.button.button--secondary.button--outline:not(.button--active):not(:hover) {
+  --ifm-font-color-base: #fff;
+}
+.navbar {
+  background-color: var(--ifm-color-primary);
+}
+
+.navbar {
+  --ifm-link-hover-color: #fff;
+  --ifm-navbar-link-color: #fff;
+}
+
+.hero--primary {
+  --ifm-hero-text-color: #fff;
+}
+
+.navbar__brand:hover {
+  color: var(--ifm-link-hover-color);
 }
 
 .docusaurus-highlight-code-line {
@@ -22,4 +46,17 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+/* Dark theme overrides */
+html[data-theme="dark"] {
+  --ifm-color-primary: #221a52;
+  --ifm-heading-color: #fff;
+  --ifm-font-color-base: #fff;
+  --ifm-menu-color-active: var(--trial-color);
+  --ifm-link-color: var(--trial-color);
+}
+
+html[data-theme="dark"] .table-of-contents__link {
+  --ifm-color-primary: var(--trial-color);
 }
