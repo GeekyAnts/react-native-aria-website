@@ -1,0 +1,79 @@
+---
+id: useCheckboxGroup
+title: useCheckboxGroup
+---
+
+import { Install } from "../src/components/Install";
+
+Provides the behavior and accessibility implementation for a checkbox group component. Checkbox groups allow users to select multiple items from a list of options.
+
+### Install
+
+<Install p={"@react-native-aria/checkbox"} />
+
+### Import
+
+```
+import {useCheckboxGroup, useCheckboxGroupItem} from '@react-native-aria/checkbox'
+```
+
+### API
+
+```
+useCheckboxGroup(props: AriaCheckboxGroupProps, state: CheckboxGroupState): CheckboxGroupAria
+useCheckboxGroupItem(
+  props: AriaCheckboxGroupItemProps,
+  state: CheckboxGroupState,
+  inputRef: RefObject<HTMLInputElement>
+): CheckboxAria
+```
+
+#### AriaCheckboxGroupProps
+
+- Props for the [checkbox group](https://react-spectrum.adobe.com/react-aria/useCheckboxGroup.html).
+
+#### CheckboxGroupState
+
+- State for the checkbox group, as returned by [useCheckboxGroupState](https://react-spectrum.adobe.com/react-stately/useCheckboxGroupState.html).
+
+#### CheckboxGroupAria
+
+```
+{
+  /** Props for the checkbox group wrapper element. */
+  groupProps: any
+
+  /** Props for the checkbox group's visible label (if any). */
+  labelProps: any
+}
+```
+
+#### AriaCheckboxGroupItemProps
+
+- Props for the [checkbox](https://react-spectrum.adobe.com/react-aria/useCheckbox.html).
+
+#### inputRef
+
+- A ref for the HTML or Pressable/Touchable element.
+
+#### CheckboxAria
+
+```
+{ inputProps: InputHTMLAttributes<HTMLInputElement> & AccessibilityProps }
+```
+
+Props for the input or Pressable/Touchable element.
+
+### Example
+
+<iframe
+  src="https://snack.expo.io/embedded/@nishanbende/checkbox?preview=true&platform=web&theme=dark"
+  height="600"
+  width="100%"
+/>
+
+<!-- ## For web
+
+Refer for usage [Checkbox](https://react-spectrum.adobe.com/react-aria/Checkbox.html)
+
+## For iOS/Android -->

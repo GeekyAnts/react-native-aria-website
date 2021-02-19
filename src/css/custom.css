@@ -72,6 +72,7 @@ html[data-theme="dark"] {
   --ifm-font-color-base: #fff;
   --ifm-menu-color-active: var(--trial-color);
   --ifm-link-color: var(--trial-color);
+  --ifm-tabs-color-active: var(--trial-color);
 }
 
 html[data-theme="dark"] .table-of-contents__link {

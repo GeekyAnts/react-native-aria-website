@@ -1,0 +1,52 @@
+---
+id: useCheckbox
+title: useCheckbox
+---
+
+import { Install } from "../src/components/Install";
+
+Provides the behavior and accessibility implementation for a checkbox component. Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.
+
+### Install
+
+<Install p={"@react-native-aria/checkbox"} />
+
+### Import
+
+```js
+import { useCheckbox } from "@react-native-aria/checkbox";
+```
+
+### API
+
+```ts
+useCheckbox(props: AriaCheckboxProps, state: ToggleState, inputRef: RefObject): CheckboxAria
+```
+
+#### AriaCheckboxProps
+
+- Props for the [checkbox](https://react-spectrum.adobe.com/react-aria/useCheckbox.html).
+
+#### ToggleState
+
+- State for the checkbox, as returned by [useToggleState](https://react-spectrum.adobe.com/react-stately/useToggleState.html).
+
+#### inputRef
+
+- A ref for the HTML or Pressable/Touchable element.
+
+#### CheckboxAria
+
+```
+{ inputProps: InputHTMLAttributes<HTMLInputElement> & AccessibilityProps }
+```
+
+Props for the input or Pressable/Touchable element.
+
+### Example
+
+<iframe
+  src="https://snack.expo.io/embedded/@nishanbende/usecheckbox?preview=true&platform=web&theme=dark"
+  height="600"
+  width="100%"
+/>

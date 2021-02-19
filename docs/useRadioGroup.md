@@ -28,6 +28,43 @@ useRadio(
 ): RadioAria
 ```
 
-### Usage
+#### AriaRadioGroupProps
+
+Props for the [radio group](https://react-spectrum.adobe.com/react-aria/useRadioGroup.html).
+
+#### RadioGroupState
+
+State for the radio group, as returned by [useRadioGroupState](https://react-spectrum.adobe.com/react-stately/useRadioGroupState.html).
+
+#### RadioGroupAria
+
+```
+{
+  /** Props for the radio group wrapper element. */
+  radioGroupProps: HTMLAttributes<HTMLElement> & AccessibilityProps,
+
+  /** Props for the radio group's visible label (if any). */
+  labelProps: HTMLAttributes<HTMLElement> & AccessibilityProps
+}
+```
+
+#### RadioAriaProps
+
+- Props for the [radio.](https://react-spectrum.adobe.com/react-aria/useRadioGroup.html)
+
+#### RadioAria
+
+```
+{
+  /** Props for the input or Pressable/Touchable element. */
+  inputProps: InputHTMLAttributes<HTMLElement> & AccessibilityProps,
+}
+```
+
+#### ref
+
+Ref to the HTML input element.
+
+### Example
 
 <iframe src="https://snack.expo.io/embedded/@nishanbende/radiogroup?preview=true&platform=web&theme=dark" height="500" width="100%" />
