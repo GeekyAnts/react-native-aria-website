@@ -1,0 +1,57 @@
+---
+id: useSwitch
+title: useSwitch
+---
+
+import { Install } from "../src/components/Install";
+
+Provides the behavior and accessibility implementation for a switch component. A switch is similar to a checkbox, but represents on/off values as opposed to selection.
+
+### Install
+
+<Install p={"@react-native-aria/switch"} />
+
+### Import
+
+```
+import { useSwitch } from '@react-native-aria/switch'
+```
+
+### API
+
+```
+useSwitch(
+  props: AriaSwitchProps,
+  state: ToggleState,
+  ref: RefObject<HTMLInputElement>
+): SwitchAria
+```
+
+#### AriaSwitchProps
+
+- Props for the [switch](https://react-spectrum.adobe.com/react-aria/useSwitch.html).
+
+#### ToggleState
+
+- State for the switch, as returned by [useToggleState](https://react-spectrum.adobe.com/react-stately/useToggleState.html).
+
+#### ref
+
+- Ref of input element or Pressable/Touchable
+
+#### SwitchAria
+
+```
+{
+  /** Props for the input element. */
+  inputProps: InputHTMLAttributes<HTMLInputElement> & AccessibilityProps;
+}
+```
+
+### Usage
+
+<iframe
+  src="https://snack.expo.io/embedded/@nishanbende/switch?iframeId=pkw3kbg1to&preview=true&platform=web&theme=dark"
+  height="500"
+  width="100%"
+/>
