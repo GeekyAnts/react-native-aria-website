@@ -1,0 +1,49 @@
+---
+id: useFocusRing
+title: useFocusRing (Web only)
+---
+
+import { Install } from "../src/components/Install";
+
+Determines whether a focus ring should be shown to indicate keyboard focus. Focus rings are visible only when the user is interacting with a keyboard, not with a mouse, touch, or other input methods.
+
+### Install
+
+<Install p={"@react-native-aria/focus"} />
+
+### Import
+
+```
+import { useFocusRing } from '@react-native-aria/focus'
+```
+
+### API
+
+```
+useFocusRing(props: FocusRingProps, ref: RefObject): FocusRingAria
+```
+
+#### FocusRingProps
+
+- Props for [FocusRing](https://react-spectrum.adobe.com/react-aria/useFocusRing.html)
+
+#### FocusRingAria
+
+```
+  /** Whether the element is currently focused. */
+  isFocused: boolean,
+
+  /** Whether keyboard focus should be visible. */
+  isFocusVisible: boolean,
+
+  /** Props to apply to the container element with the focus ring. */
+  focusProps: HTMLAttributes<HTMLElement>
+```
+
+## Example
+
+<iframe
+  src="https://snack.expo.io/embedded/@nishanbende/usefocusring?preview=true&platform=web&theme=dark"
+  height="500"
+  width="100%"
+/>

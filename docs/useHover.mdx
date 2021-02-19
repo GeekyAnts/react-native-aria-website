@@ -1,0 +1,46 @@
+---
+id: useHover
+title: useHover (Web only)
+---
+
+import { Install } from "../src/components/Install";
+
+Handles pointer hover interactions for an element. Normalizes behavior across browsers and platforms, and ignores emulated mouse events on touch devices.
+
+### Install
+
+<Install p={"@react-native-aria/interactions"} />
+
+### Import
+
+```
+import { useHover } from '@react-native-aria/interactions'
+```
+
+### API
+
+```
+useHover(props: HoverProps, ref: RefObject): HoverResult
+```
+
+#### HoverProps
+
+- props for [hover](https://react-spectrum.adobe.com/react-aria/useHover.html)
+
+#### HoverResult
+
+```
+{
+  /** Props to spread on the target element. */
+  hoverProps: HTMLAttributes<HTMLElement>,
+  isHovered: boolean
+}
+```
+
+## Example
+
+<iframe
+  src="https://snack.expo.io/embedded/@nishanbende/usehover?preview=true&platform=web&theme=dark"
+  height="600"
+  width="100%"
+/>

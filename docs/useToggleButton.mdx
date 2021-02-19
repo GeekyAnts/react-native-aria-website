@@ -1,0 +1,59 @@
+---
+id: useToggleButton
+title: useToggleButton
+---
+
+import { Install } from "../src/components/Install";
+
+Provides the behavior and accessibility implementation for a toggle button component. ToggleButtons allow users to toggle a selection on or off, for example switching between two states or modes.
+
+### Install
+
+<Install p={"@react-native-aria/button"} />
+
+### Import
+
+```
+import {useToggleButton} from '@react-native-aria/button'
+```
+
+### API
+
+```
+useToggleButton(
+  props: AriaToggleButtonProps<ElementType>,
+  state: ToggleState,
+  ref: RefObject<any>
+): ButtonAria<HTMLAttributes<any>>
+```
+
+#### AriaToggleButtonProps
+
+Props for the [toggle button.](https://react-spectrum.adobe.com/react-aria/useToggleButton.html)
+
+#### ToggleState
+
+- State for the toggle button, as returned by [useToggleState](https://react-spectrum.adobe.com/react-stately/useToggleState.html).
+
+#### ButtonAria
+
+```
+{
+  /** Props for the Touchable/Pressable element. */
+  buttonProps: PressableProps,
+  /** Whether the button is currently pressed. */
+  isPressed: boolean
+}
+```
+
+#### ref
+
+- Ref of Pressable/Touchable
+
+## Usage
+
+<iframe
+  src="https://snack.expo.io/embedded/@nishanbende/togglebutton?preview=true&platform=web&theme=dark"
+  height="500"
+  width="100%"
+/>

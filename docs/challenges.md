@@ -9,7 +9,7 @@ To implement a component library that meets the accessibility requirements for A
 
 ## React Native Web
 
-React Native Web enables rendering React Native components on the web. This allows us to create components for Android, iOS and Web in a single codebase. However, the challenging part is to get the correct accessibility behaviour.
+React Native Web enables rendering React Native components on the web. This allows us to create components for Android, iOS and Web in a single codebase.
 
 ## Why not directly use React Aria with React Native Web?
 
@@ -22,7 +22,7 @@ For example:
 - role - needs to be passed as accessibilityRole
 - tabIndex - needs to be set using focusable
 - id - needs to be passed as nativeID
-- [onKeyDown can't be passed to Pressable](https://github.com/necolas/react-native-web/issues/1862)- needs to be set using ref
+- [onKeyDown can't be passed to Pressable](https://github.com/necolas/react-native-web/issues/1862) - needs to be set using ref
 
 Additionally, future versions of React Native Web will deprecate the usage of aria-\* attributes as [mentioned here](https://github.com/necolas/react-native-web/releases/tag/0.15.0). Since v0.15, each aria-\* attribute has equivalent accessibility\* [mapping](https://necolas.github.io/react-native-web/docs/accessibility/).
 

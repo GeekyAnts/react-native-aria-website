@@ -1,0 +1,44 @@
+---
+id: OverlayContainer
+title: OverlayContainer
+---
+
+import { Install } from "../src/components/Install";
+
+Provides React Portal like functionality for React Native apps which can be useful for displaying absolutely positioned components like Menu, Tooltip, Popover.
+
+:::info
+React Native currently doesn't fully support Portals. https://github.com/react-native-modal/react-native-modal/issues/145
+:::
+
+### Install
+
+<Install p={"@react-native-aria/overlays"} />
+
+### Usage
+
+1. Wrap your application with OverlayProvider
+
+```js
+import { OverlayProvider } from "@react-native-aria/overlays";
+
+export default function App() {
+  return <OverlayProvider>{/* Your app content goes here */}</OverlayProvider>;
+}
+```
+
+2. Wrap the component that needs to be rendered in OverlayProvider with OverlayContainer
+
+```js
+import { OverlayProvider } from "@react-native-aria/overlays";
+
+export default function App() {
+  return (
+    <OverlayContainer>
+      <Text>This content will be rendered in the OverlayProvider</Text>
+    </OverlayContainer>
+  );
+}
+```
+
+### Example

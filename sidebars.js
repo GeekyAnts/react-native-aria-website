@@ -4,7 +4,12 @@ module.exports = {
       type: "category",
       collapsed: false,
       label: "Introduction",
-      items: ["introduction", "challenges", "installation", "additionalResources"],
+      items: [
+        "introduction",
+        "challenges",
+        "installation",
+        "additionalResources",
+      ],
     },
     {
       type: "category",
@@ -28,14 +33,14 @@ module.exports = {
       type: "category",
       collapsed: false,
       label: "Overlays",
-      items: ["useOverlayPosition"],
+      items: ["OverlayContainer", "useOverlayPosition"],
     },
-    {
-      type: "category",
-      label: "Collections",
-      collapsed: false,
-      items: ["useMenu"],
-    },
+    // {
+    //   type: "category",
+    //   label: "Collections",
+    //   collapsed: false,
+    //   items: ["useMenu"],
+    // },
 
     // "Web/Android/iOS": [
     //   "useFocusRing",
