@@ -65,7 +65,7 @@ module.exports = {
           title: " ",
           items: [
             {
-              label: "Built with ❤️ by GeekyAnts ",
+              label: "Built with ❤️ at GeekyAnts ",
               href: "https://www.geekyants.com",
             },
           ],
@@ -81,7 +81,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            "https://github.com/geekyants/react-native-aria-website/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
