@@ -65,7 +65,7 @@ module.exports = {
           title: " ",
           items: [
             {
-              label: "Built with ❤️ by GeekyAnts ",
+              label: "Built with ❤️ at GeekyAnts ",
               href: "https://www.geekyants.com",
             },
           ],
