@@ -15,7 +15,7 @@ React Native Web enables rendering React Native components on the web. This allo
 
 Firstly, **React Native Web has all the [features](https://necolas.github.io/react-native-web/docs/accessibility/) to implement accessible web apps.**
 
-However, props spread from React Aria don't always work with react-native-web.
+However, props spread from [React Aria](https://react-spectrum.adobe.com/react-aria/index.html) hooks don't always work with React Native web components (View, Pressable).
 
 For example:
 
@@ -26,4 +26,8 @@ For example:
 
 Additionally, future versions of React Native Web will deprecate the usage of aria-\* attributes as [mentioned here](https://github.com/necolas/react-native-web/releases/tag/0.15.0). Since v0.15, each aria-\* attribute has equivalent accessibility\* [mapping](https://necolas.github.io/react-native-web/docs/accessibility/).
 
-React Native ARIA ensures that hooks from [React Aria](https://react-spectrum.adobe.com/react-aria/) work as expected on React Native Web and provide [accessibility equivalents](https://reactnative.dev/docs/accessibility) when used on iOS and Android.
+React Native ARIA ensures that hooks from [React Aria](https://react-spectrum.adobe.com/react-aria/) work as expected on React Native components and provide [accessibility equivalents](https://reactnative.dev/docs/accessibility) when used on iOS and Android.
+
+:::note
+React DOM elements (div, span, etc) work well with React Native Web and you can totally use that with [React Aria](https://react-spectrum.adobe.com/react-aria/index.html). In that case, you may not need this library.
+:::

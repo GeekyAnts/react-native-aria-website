@@ -55,6 +55,10 @@ module.exports = {
               label: "GitHub",
               href: "https://github.com/GeekyAnts/react-native-aria",
             },
+            {
+              label: "Roadmap",
+              href: "https://trello.com/b/8HcLFH3K/react-native-aria-roadmap",
+            },
           ],
         },
         {

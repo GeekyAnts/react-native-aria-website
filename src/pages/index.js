@@ -296,9 +296,19 @@ function Home() {
                 Build Accessible and Rich Apps with React Native
               </h1>
               <p className="hero__subtitle hero__subtitle--left">
-                React Native ARIA handles behaviour, accessibility and
+                {/* React Native ARIA handles behaviour, accessibility and
                 interactions so you can implement custom components and design
-                systems for Android, iOS and Web
+                systems for Android, iOS and Web.
+                <br /> */}
+                React Native Aria brings the support of{" "}
+                <a
+                  href="https://react-spectrum.adobe.com/react-aria/"
+                  target="__blank"
+                  className="text-white hover-text-white text-underline"
+                >
+                  React Aria
+                </a>{" "}
+                to React Native
               </p>
               <div className={styles.buttons}>
                 <Link
@@ -312,19 +322,13 @@ function Home() {
                 </Link>
               </div>
             </div>
-            <div className="col col--6">
-              <img src="img/header-image.png" alt="Different devices"></img>
+            <div className="col col--6 hero-image">
+              <img
+                style={{ height: "25rem" }}
+                src="img/logo-large.png"
+                alt="React Native Aria logo"
+              ></img>
             </div>
-          </div>
-          <div style={{ textAlign: "right" }}>
-            Powered by{" "}
-            <a
-              target="__blank"
-              className="text-white hover-text-white"
-              href="https://react-spectrum.adobe.com/react-aria/"
-            >
-              React Aria
-            </a>
           </div>
         </div>
       </header>

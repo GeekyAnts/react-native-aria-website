@@ -77,6 +77,10 @@ html[data-theme="dark"] {
   --svg-fill-color: #fff;
 }
 
+html[data-theme="dark"] .admonition-heading {
+  --ifm-heading-color: #000;
+}
+
 html[data-theme="dark"] .table-of-contents__link {
   --ifm-color-primary: var(--trial-color);
 }
@@ -108,4 +112,14 @@ html[data-theme="dark"] .navbar__link--active {
 
 .hover-text-white:hover {
   color: #fff;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 996px) {
+  .hero-image {
+    margin-top: 2rem;
+  }
 }
