@@ -10,33 +10,34 @@ import Head from "@docusaurus/Head";
 const SVGs = {
   Accessible: (
     <svg
-      width="100px"
-      height="100px"
-      viewBox="0 0 100 100"
+      width="102px"
+      height="102px"
+      viewBox="0 0 102 102"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>accessibility</title>
+      <title>Accessibility</title>
       <g
         id="Page-1"
         stroke="none"
         stroke-width="1"
         fill="none"
         fill-rule="evenodd"
-        opacity="0.7"
+        opacity="0.5"
       >
         <g
-          id="Landing-page-ReactNative-Aria"
-          transform="translate(-177.000000, -987.000000)"
-          fill="#8578D8"
+          id="Landing-page-ReactNative-Aria-Edit1"
+          transform="translate(-176.000000, -962.000000)"
           className="feature-icons"
           fill-rule="nonzero"
         >
-          <g id="4" transform="translate(139.000000, 987.000000)">
+          <g id="4" transform="translate(139.000000, 963.000000)">
             <g id="accessibility" transform="translate(38.000000, 0.000000)">
               <path
                 d="M50,100 C77.6142375,100 100,77.6142375 100,50 C100,22.3857625 77.6142375,0 50,0 C22.3857625,0 0,22.3857625 0,50 C0.031490257,77.6011832 22.3988168,99.9685098 50,100 Z M50,3.57142857 C75.641792,3.57142857 96.4285714,24.358208 96.4285714,50 C96.4285714,75.641792 75.641792,96.4285714 50,96.4285714 C24.358208,96.4285714 3.57142857,75.641792 3.57142857,50 C3.60095007,24.3704463 24.3704462,3.60095007 50,3.57142857 Z"
                 id="Shape"
+                className="feature-icons--stroke"
+                stroke-width="2"
               ></path>
               <path
                 d="M50.0084263,21 C54.6431608,21 58.4003555,24.7571947 58.4003555,29.3919292 C58.4003555,34.0266637 54.6431608,37.7838583 50.0084263,37.7838583 C45.3736918,37.7838583 41.6164971,34.0266637 41.6164971,29.3919292 C41.621123,24.7591121 45.3756092,21.0046259 50.0084263,21 Z M30.52936,39.1937024 L45.2404119,40.5140326 C45.7392655,40.5587896 46.2395176,40.5811681 46.7411685,40.5811681 L53.275684,40.5811681 C53.7764025,40.5811681 54.2766547,40.5587896 54.7764407,40.5140326 L69.4623168,39.1951011 L69.4846952,39.1951011 C71.7954966,39.0189812 73.8115445,40.7494825 73.9876646,43.0602838 C74.1637844,45.3710851 72.4332832,47.3871333 70.1224818,47.5632531 L58.2716792,48.6388187 C57.5514416,48.7039039 56.9995844,49.3073082 56.9989033,50.0304803 L56.9989033,53.2473865 C56.998567,53.9471411 57.129508,54.6407483 57.384932,55.2922199 L64.1390363,72.4956747 C65.0111262,74.6031595 64.0400605,77.0213094 61.9526094,77.9403202 C59.8651584,78.859331 57.4258932,77.9425963 56.4604212,75.8762235 L49.9846491,60.1455523 L43.5746139,75.8272706 C42.983731,77.2229848 41.6860833,78.1915628 40.1799542,78.3610805 C38.6738252,78.530598 37.1933402,77.874704 36.3069904,76.645255 C35.4206405,75.4158061 35.2662075,73.8039179 35.902992,72.4285393 L42.6333192,55.2866253 C42.8872853,54.635845 43.0168066,53.9431669 43.015152,53.2445892 L43.015152,50.027683 C43.0144708,49.3045109 42.4626136,48.7011066 41.742376,48.6360214 L29.8677963,47.5604558 C27.5573811,47.3789288 25.8315764,45.3588104 26.0131036,43.0483952 C26.1946307,40.7379801 28.2147489,39.0121754 30.525164,39.1937024 L30.52936,39.1937024 Z"
@@ -56,7 +57,7 @@ const SVGs = {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>compose</title>
+      <title>Composable</title>
       <g
         id="Page-1"
         stroke="none"
@@ -66,12 +67,12 @@ const SVGs = {
         opacity="0.5"
       >
         <g
-          id="Landing-page-ReactNative-Aria"
-          transform="translate(-478.000000, -987.000000)"
+          id="Landing-page-ReactNative-Aria-Edit1"
+          transform="translate(-478.000000, -958.000000)"
           className="feature-icons"
           fill-rule="nonzero"
         >
-          <g id="4-copy-4" transform="translate(440.000000, 987.000000)">
+          <g id="4-copy-4" transform="translate(440.000000, 958.000000)">
             <g id="compose" transform="translate(38.000000, 0.000000)">
               <path
                 d="M31.4506823,68.3883041 L54.9766082,62.5091618 L99.6923977,17.7996101 L82.0393762,0.146588694 L37.3298246,44.8654971 L31.4506823,68.3883041 Z M82.0393762,8.9668616 L90.8721248,17.7996101 L86.4619883,22.2003899 L77.6385965,13.380117 L82.0393762,8.9668616 Z M73.22846,17.7996101 L82.0393762,26.6105263 L53.3672515,55.2826511 L44.5469786,46.4592593 L73.22846,17.7996101 Z M41.8366472,52.5598441 L47.2791423,58.0023392 L40.0214425,59.814425 L41.8366472,52.5598441 Z"
@@ -110,25 +111,25 @@ const SVGs = {
         stroke-width="1"
         fill="none"
         fill-rule="evenodd"
-        opacity="0.7"
+        opacity="0.5"
       >
         <g
-          id="Landing-page-ReactNative-Aria"
-          transform="translate(-800.000000, -986.000000)"
+          id="Landing-page-ReactNative-Aria-Edit1"
+          transform="translate(-800.000000, -953.000000)"
+          className="feature-icons--stroke"
         >
-          <g id="Group-11" transform="translate(741.000000, 987.000000)">
-            <g id="Group-2" transform="translate(60.000000, 0.000000)">
+          <g transform="translate(741.000000, 954.000000)">
+            <g transform="translate(60.000000, 0.000000)">
               <path
                 d="M50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 C31.8412294,100 15.9433612,90.3199263 7.18514783,75.8385314 L10.7694026,75.8380052 C19.1714751,88.5694003 33.6047404,96.969697 50,96.969697 C75.9406473,96.969697 96.969697,75.9406473 96.969697,50 C96.969697,24.0593527 75.9406473,3.03030303 50,3.03030303 C24.0593527,3.03030303 3.03030303,24.0593527 3.03030303,50 C3.03030303,55.3611912 3.92851867,60.5125928 5.58267194,65.311927 L2.38813684,65.3119987 C0.837425448,60.48635 0,55.3409706 0,50 C0,22.3857625 22.3857625,0 50,0 Z"
                 id="Combined-Shape"
-                className="feature-icons--stroke"
+                stroke-width="2"
                 className="feature-icons"
                 fill-rule="nonzero"
               ></path>
               <g
                 id="Group"
                 transform="translate(20.289855, 24.637681)"
-                className="feature-icons--stroke"
                 stroke-width="2"
               >
                 <rect
@@ -151,8 +152,7 @@ const SVGs = {
               </g>
               <circle
                 id="Oval"
-                stroke="#3D3A70"
-                fill="#3D3A70"
+                fill="#4B3AB1"
                 cx="6.52173913"
                 cy="70.2898551"
                 r="2.17391304"
@@ -167,7 +167,7 @@ const SVGs = {
     <svg
       width="102px"
       height="102px"
-      viewBox="0 0 102 102"
+      viewBox="0 0 106 106"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -178,13 +178,10 @@ const SVGs = {
         stroke-width="1"
         fill="none"
         fill-rule="evenodd"
-        opacity="0.7"
+        opacity="0.5"
       >
-        <g
-          id="Landing-page-ReactNative-Aria"
-          transform="translate(-1142.000000, -986.000000)"
-        >
-          <g id="Group-16" transform="translate(1087.000000, 987.000000)">
+        <g transform="translate(-1140.000000, -960.000000)">
+          <g id="Group-16" transform="translate(1087.000000, 963.000000)">
             <g id="Group-18" transform="translate(56.000000, 0.000000)">
               <g
                 id="mixer"
@@ -208,7 +205,7 @@ const SVGs = {
               <circle
                 id="Oval"
                 className="feature-icons--stroke"
-                stroke-width="2"
+                stroke-width="5"
                 cx="50"
                 cy="50"
                 r="50"
@@ -324,7 +321,7 @@ function Home() {
             </div>
             <div className="col col--6 hero-image">
               <img
-                style={{ height: "25rem" }}
+                style={{ height: "20rem" }}
                 src="img/logo-large.png"
                 alt="React Native Aria logo"
               ></img>
