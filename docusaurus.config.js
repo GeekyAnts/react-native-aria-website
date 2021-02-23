@@ -30,7 +30,7 @@ module.exports = {
         },
         {
           href:
-            "https://geekyants.com/hire?utm_source=reactnativearia&utm_medium=header&utm_campaign=reactnativearia",
+            "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Hire_Us&utm_campaign=RN_ARIA",
           label: "Hire Us",
           position: "right",
         },
@@ -66,7 +66,7 @@ module.exports = {
           items: [
             {
               label: "Built with ❤️ at GeekyAnts ",
-              href: "https://www.geekyants.com",
+              href: "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Made_with_love&utm_campaign=RN_ARIA",
             },
           ],
         },
