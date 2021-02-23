@@ -344,18 +344,18 @@ function Home() {
         <section className={styles.exampleSection}>
           <div className="container text--center">
             <div className={styles.exampleWrapper}>
-              <h3 className="hero__title">Checkbox Example</h3>
+              <h3 className="hero__title">Toggle Button Example</h3>
               <div className={styles.exampleDescription}>
                 <p>
-                  Checkboxes allow users to select multiple items from a list of
-                  individual items, or to mark one individual item as selected.
-                  React Native ARIA provides the behaviour and accessibility
-                  implementations for a Checkbox component.
+                  Provides the behavior and accessibility implementations for a
+                  toggle button component. ToggleButtons allow users to toggle a
+                  selection on or off, for example switching between two states
+                  or modes.
                 </p>
               </div>
             </div>
             <iframe
-              src="https://snack.expo.io/embedded/@nishanbende/usecheckbox?preview=true&platform=web&theme=dark"
+              src="https://snack.expo.io/embedded/@nishanbende/usetogglebutton?preview=true&platform=web&theme=dark"
               height="600"
               width="100%"
             />
