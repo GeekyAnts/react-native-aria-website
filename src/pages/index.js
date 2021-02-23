@@ -273,6 +273,7 @@ function Home() {
           property="og:description"
           content="React Hooks that provides accessible UI primitives for your React Native design system."
         />
+        <meta property="og:image" content="/img/og-image.png" />
         <meta
           name="keywords"
           content="React, TypeScript, Open Source, OSS, ARIA, React Native, Accessible, Aria, WAI-ARIA"
