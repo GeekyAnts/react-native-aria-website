@@ -275,7 +275,7 @@ function Home() {
         />
         <meta
           property="og:image"
-          content="https://react-native-aria.geekyants.com/img/og-image.png"
+          content="https://react-native-aria.geekyants.com/img/banner.png"
         />
         <meta
           name="keywords"
@@ -290,7 +290,7 @@ function Home() {
         <meta name="twitter:image:alt" content="React Native ARIA" />
         <meta
           name="twitter:image"
-          content="https://react-native-aria.geekyants.com/img/og-image.png"
+          content="https://react-native-aria.geekyants.com/img/banner.png"
         />
       </Head>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
