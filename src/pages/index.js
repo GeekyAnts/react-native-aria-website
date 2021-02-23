@@ -265,26 +265,33 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="React Hooks that provides accessible UI primitives for your React Native design system."
+      description="React Hooks to build accessible React Native design systems"
     >
       <Head>
         <meta property="og:title" content="React Native ARIA" />
         <meta
           property="og:description"
-          content="React Hooks that provides accessible UI primitives for your React Native design system."
+          content="React Hooks to build accessible React Native design systems"
         />
-        <meta property="og:image" content="/img/og-image.png" />
+        <meta
+          property="og:image"
+          content="https://react-native-aria.geekyants.com/img/og-image.png"
+        />
         <meta
           name="keywords"
           content="React, TypeScript, Open Source, OSS, ARIA, React Native, Accessible, Aria, WAI-ARIA"
         />
         <meta
           property="og:url"
-          content="[https://geekyants.github.io/react-native-aria/](https://geekyants.github.io/react-native-aria/)"
+          content="https://react-native-aria.geekyants.com"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="React Native ARIA" />
         <meta name="twitter:image:alt" content="React Native ARIA" />
+        <meta
+          name="twitter:image"
+          content="https://react-native-aria.geekyants.com/img/og-image.png"
+        />
       </Head>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
