@@ -290,7 +290,7 @@ function Home() {
           <div className="row">
             <div className="col col--6">
               <h1 className="hero__title hero__title--left">
-                React Hooks to make accessible React Native design systems
+                React Hooks to build accessible React Native design systems
               </h1>
               <p className="hero__subtitle hero__subtitle--left">
                 {/* React Native ARIA handles behaviour, accessibility and
