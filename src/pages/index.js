@@ -265,13 +265,13 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="React Native ARIA helps you build accessible and rich apps with React Native."
+      description="React Hooks that provides accessible UI primitives for your React Native design system."
     >
       <Head>
         <meta property="og:title" content="React Native ARIA" />
         <meta
           property="og:description"
-          content="React Native ARIA helps you build accessible and rich apps with React Native."
+          content="React Hooks that provides accessible UI primitives for your React Native design system."
         />
         <meta
           name="keywords"
@@ -290,7 +290,7 @@ function Home() {
           <div className="row">
             <div className="col col--6">
               <h1 className="hero__title hero__title--left">
-                Build Accessible and Rich Apps with React Native
+                React Hooks to make accessible React Native design systems
               </h1>
               <p className="hero__subtitle hero__subtitle--left">
                 {/* React Native ARIA handles behaviour, accessibility and
@@ -305,7 +305,7 @@ function Home() {
                 >
                   React Aria
                 </a>{" "}
-                to React Native
+                to React Native (Web, Android & iOS)
               </p>
               <div className={styles.buttons}>
                 <Link
