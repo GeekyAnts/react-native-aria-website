@@ -292,6 +292,20 @@ function Home() {
           name="twitter:image"
           content="https://react-native-aria.geekyants.com/img/banner.png"
         />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-HHHEDRF361"
+        ></script>
+        <script>
+          {`
+             window.dataLayer = window.dataLayer || [];
+             function gtag(){dataLayer.push(arguments);}
+             gtag('js', new Date());
+           
+             gtag('config', 'G-HHHEDRF361');
+          `}
+        </script>
       </Head>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
