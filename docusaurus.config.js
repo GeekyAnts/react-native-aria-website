@@ -36,6 +36,14 @@ module.exports = {
         },
       ],
     },
+    algolia: {
+      apiKey: "811af76a47f6b4a94d8880d4fbddf3b8",
+      indexName: "ReactNativeAria",
+      placeholder: "Search",
+      algoliaOptions: {
+        facetFilters: ["language:en"],
+      },
+    },
     footer: {
       style: "dark",
       links: [
@@ -49,15 +57,41 @@ module.exports = {
           ],
         },
         {
+          title: "Community",
+          items: [
+            {
+              label: "Twitter",
+
+              to: "https://twitter.com/SyncstateIO",
+            },
+            {
+              label: "Stack Overflow",
+
+              to: "https://stackoverflow.com/questions/tagged/syncstate",
+            },
+            {
+              label: "Discord",
+
+              to: "https://discord.com/invite/FnET5S9",
+            },
+          ],
+        },
+        {
           title: "More",
           items: [
             {
               label: "GitHub",
               href: "https://github.com/GeekyAnts/react-native-aria",
             },
+            // {
+            //   label: "Roadmap",
+            //   href: "https://trello.com/b/8HcLFH3K/react-native-aria-roadmap",
+            // },
             {
-              label: "Roadmap",
-              href: "https://trello.com/b/8HcLFH3K/react-native-aria-roadmap",
+              label: "Contribution Guidelines",
+
+              to:
+                "https://github.com/GeekyAnts/react-native-aria/blob/main/CONTRIBUTING.md",
             },
           ],
         },
@@ -66,25 +100,42 @@ module.exports = {
           items: [
             {
               label: "Built with ❤️ at GeekyAnts ",
-              href: "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Made_with_love&utm_campaign=RN_ARIA",
+              href:
+                "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Made_with_love&utm_campaign=RN_ARIA",
             },
           ],
         },
       ],
+      copyright: `Copyright © ${new Date().getFullYear()} ReactNativeAria `,
     },
   },
   presets: [
     [
       "@docusaurus/preset-classic",
+      // {
+      //   docs: {
+      //     sidebarPath: require.resolve("./sidebars.js"),
+      //     // Please change this to your repo.
+      //     editUrl:
+      //       "https://github.com/geekyants/react-native-aria-website/tree/main/",
+      //   },
+      //   theme: {
+      //     customCss: require.resolve("./src/css/custom.css"),
+      //   },
+      // },
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/geekyants/react-native-aria-website/tree/main/",
+          // homePageId: "getting-started",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          path: "./docs",
+          sidebarPath: "./sidebars.js",
+        },
+        blog: {
+          path: "blog",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: "../src/css/custom.css",
         },
       },
     ],

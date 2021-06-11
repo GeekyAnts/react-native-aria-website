@@ -17,6 +17,19 @@
     padding: 2rem;
   }
 }
+@media screen and (max-width: 480px) {
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #gitStarCounterContainer {
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
 
 .buttons {
   display: flex;

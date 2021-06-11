@@ -117,13 +117,84 @@ html[data-theme="dark"] .navbar__link--active {
 .text-underline {
   text-decoration: underline;
 }
+/* .hero__title {
+  font-size: 2.8rem;
+} */
+.hero-image > img {
+  height: 20rem;
+  width: 20rem;
+  margin-top: 2rem;
+}
 
 @media (max-width: 996px) {
   .hero-image {
     margin-top: 2rem;
   }
+  .hero-image > img {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 2rem;
+  }
 }
-
+@media screen and (max-width: 480px) {
+  #gitStarCounterContainer {
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+/* @media screen and (max-width: 769px) {
+  #gitStarCounterInnerDiv {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+  }
+  #gitStarCounterContainer {
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  #gitStarCounterInnerDiv > a {
+    padding: 12px 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+} */
+/* min-width: 175px; */
+/* max-width: 175px; */
 .hero__title {
-  font-size: 2.8rem;
+  font-size: 2.8em;
+}
+.stargazers {
+  font-size: 18.9px;
+  color: #fff;
+  padding-left: 20px;
+}
+.gitStarCounterInnerDiv {
+  color: "blue";
+  padding: 20px 0px;
+}
+.gitStarCounterContainer {
+  margin-left: 20px;
+}
+.gitStarCounterInnerDiv > a {
+  padding: 8.1px 25.5px;
+  border-radius: 7px;
+  text-align: center;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 167px;
+  text-transform: none;
+  /* max-width: 175px; */
+}
+.footer__bottom {
+  margin-top: 4rem;
 }
