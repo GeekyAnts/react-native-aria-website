@@ -281,14 +281,13 @@ function Home() {
       <div className="gitStarCounterInnerDiv" id="gitStarCounterInnerDiv">
         <a
           className="button"
+          id="button"
           href="https://github.com/GeekyAnts/react-native-aria"
           target="_blank"
         >
-          <FaGithub style={{ fontSize: "24px" }} />
+          <FaGithub style={{ fontSize: "46px", color: "#fff" }} />
 
-          <div className="stargazers">
-            <strong>{stargazers} Stars</strong>
-          </div>
+          <div className="stargazers">{stargazers} Stars</div>
         </a>
       </div>
     </div>

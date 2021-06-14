@@ -8,11 +8,7 @@ const AuthorList = [
     gitUrl: "https://github.com/sanketsahu",
     image: "https://avatars.githubusercontent.com/u/1733433?v=4",
   },
-  {
-    name: "ilasahu",
-    gitUrl: "https://github.com/ilasahu",
-    image: "https://avatars.githubusercontent.com/u/19813508?v=4",
-  },
+
   {
     name: "himanshu-satija",
     gitUrl: "https://github.com/himanshu-satija",
@@ -24,24 +20,30 @@ const AuthorList = [
     image: "https://avatars.githubusercontent.com/u/67270892?v=4",
   },
   {
-    name: "rajatk16",
-    gitUrl: "https://github.com/rajatk16",
-    image: "https://avatars.githubusercontent.com/u/23185733?v=4",
+    name: "Ajamuar",
+    gitUrl: "https://github.com/Ajamuar",
+    image: "https://avatars.githubusercontent.com/u/48080578?v=4",
   },
-  {
-    name: "cyrus25",
-    gitUrl: "https://github.com/cyrus25",
-    image: "https://avatars.githubusercontent.com/u/38385549?v=4",
-  },
+
   {
     name: "theankurkedia",
     gitUrl: "https://github.com/theankurkedia",
     image: "https://avatars.githubusercontent.com/u/15001759?v=4",
   },
   {
-    name: "sankhadeeproy007",
-    gitUrl: "https://github.com/sankhadeeproy007",
-    image: "https://avatars.githubusercontent.com/u/10998047?v=4",
+    name: "intergalacticspacehighway",
+    gitUrl: "https://github.com/intergalacticspacehighway",
+    image: "https://avatars.githubusercontent.com/u/23293248?v=4",
+  },
+  {
+    name: "gauravguha",
+    gitUrl: "https://github.com/gauravguha",
+    image: "https://avatars.githubusercontent.com/u/19682624?v=4",
+  },
+  {
+    name: "vidhi499",
+    gitUrl: "https://github.com/vidhi499",
+    image: "https://avatars.githubusercontent.com/u/47877976?v=4",
   },
 ];
 

@@ -31,14 +31,15 @@
 .authorHeader > h3 {
   margin: 0;
   font-size: 2.8rem;
-  background: -webkit-linear-gradient(
+
+  /* background: -webkit-linear-gradient(
     0deg,
     rgba(220, 38, 38, 1) 0%,
     rgba(153, 27, 27, 1) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .authorBody {

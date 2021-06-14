@@ -125,6 +125,9 @@ html[data-theme="dark"] .navbar__link--active {
   width: 20rem;
   margin-top: 2rem;
 }
+#button {
+  border: none;
+}
 
 @media (max-width: 996px) {
   .hero-image {
@@ -140,7 +143,7 @@ html[data-theme="dark"] .navbar__link--active {
   #gitStarCounterContainer {
     margin-left: 0px;
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
   }
 }
 /* @media screen and (max-width: 769px) {
@@ -172,13 +175,13 @@ html[data-theme="dark"] .navbar__link--active {
   font-size: 2.8em;
 }
 .stargazers {
-  font-size: 18.9px;
+  font-size: 20px;
   color: #fff;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 .gitStarCounterInnerDiv {
   color: "blue";
-  padding: 20px 0px;
+  padding: 0px 0px;
 }
 .gitStarCounterContainer {
   margin-left: 20px;

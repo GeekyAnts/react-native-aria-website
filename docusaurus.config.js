@@ -62,17 +62,18 @@ module.exports = {
             {
               label: "Twitter",
 
-              to: "https://twitter.com/SyncstateIO",
+              to: "https://twitter.com/geekyants",
             },
             {
               label: "Stack Overflow",
 
-              to: "https://stackoverflow.com/questions/tagged/syncstate",
+              to:
+                "https://stackoverflow.com/questions/tagged/React-native-aria",
             },
             {
               label: "Discord",
 
-              to: "https://discord.com/invite/FnET5S9",
+              to: "https://discord.com/invite/jpxVeDFqxG",
             },
           ],
         },
