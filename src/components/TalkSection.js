@@ -6,9 +6,7 @@ export default function TalkSection() {
     <section className={styles.talkSection}>
       <div className="container text--center">
         <div className={styles.exampleWrapper}>
-          <h3 className="hero__title">
-            Watch the talk about React Native Aria
-          </h3>
+          <h3 className="hero__title">Watch the talk on React Native Aria</h3>
         </div>
 
         <iframe

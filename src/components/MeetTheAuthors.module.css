@@ -53,7 +53,7 @@
 .authorImg {
   height: 114px;
   border-radius: 100px;
-  margin: 10px 13px;
+  margin: 16px;
 }
 @media screen and (max-width: 1000px) {
   .authorContainer {
@@ -98,7 +98,7 @@
   .authorImg {
     height: 70px;
     border-radius: 70px;
-    margin: 10px;
+    margin: 8px;
   }
 }
 

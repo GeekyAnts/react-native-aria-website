@@ -46,6 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 75%;
   /* max-width: 940px; */
   /* margin-left: 0px; */
   margin: auto;
@@ -53,7 +54,7 @@
 .projectImg {
   height: 110px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 8px;
 }
 @media screen and (max-width: 1000px) {
   .projectContainer {
@@ -98,7 +99,7 @@
   .projectImg {
     height: 110px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 8px;
   }
 }
 
