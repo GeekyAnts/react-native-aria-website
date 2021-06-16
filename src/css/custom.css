@@ -21,7 +21,10 @@
   /* --ifm-navbar-padding-horizontal: 10rem; */
   --svg-fill-color: var(--ifm-color-primary);
 }
-
+.feature_section_padding {
+  padding-bottom: 2rem !important;
+  padding-top: 1rem !important;
+}
 .navbar-sidebar__brand {
   background-color: var(--ifm-color-primary);
 }

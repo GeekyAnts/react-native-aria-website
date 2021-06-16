@@ -5,7 +5,7 @@
 }
 .authorContainer {
   text-align: center;
-  width: 75%;
+  /* width: 75%; */
   margin: auto;
   margin-bottom: 4rem;
   padding: 8px;
@@ -46,14 +46,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 940px;
+  /* max-width: 940px; */
   /* margin-left: 0px; */
   margin: auto;
 }
 .authorImg {
   height: 114px;
   border-radius: 100px;
-  margin: 16px;
+  margin: 10px 13px;
 }
 @media screen and (max-width: 1000px) {
   .authorContainer {
@@ -102,5 +102,13 @@
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1400px) {
+  .authorBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 940px;
+    /* margin-left: 0px; */
+    margin: auto;
+  }
 }

@@ -1,3 +1,9 @@
+.products {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+  width: 100%;
+}
 .projectSection {
   margin-bottom: 4rem;
   display: block;
@@ -45,8 +51,8 @@
 .projectBody {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 75%;
+  justify-content: space-between;
+  /* width: 75%; */
   /* max-width: 940px; */
   /* margin-left: 0px; */
   margin: auto;
@@ -103,5 +109,14 @@
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1500px) {
+  .projectBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* width: 75%; */
+    /* max-width: 940px; */
+    /* margin-left: 0px; */
+    margin: auto;
+  }
 }

@@ -37,7 +37,7 @@ module.exports = {
       ],
     },
     algolia: {
-      apiKey: "811af76a47f6b4a94d8880d4fbddf3b8",
+      apiKey: "e2206a9dbfb5b7bba33d6dccec9acfe1",
       indexName: "ReactNativeAria",
       placeholder: "Search",
       algoliaOptions: {

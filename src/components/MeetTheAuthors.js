@@ -58,18 +58,20 @@ function Author({ gitUrl, image }) {
 export default function MeetTheAuthors() {
   return (
     <section className={styles.authorSection}>
-      <div className={styles.authorContainer} id={styles.authorContainer}>
-        <div className={styles.authorHeader}>
-          {/* <img
+      <div className="container">
+        <div className={styles.authorContainer} id={styles.authorContainer}>
+          <div className={styles.authorHeader}>
+            {/* <img
             src="https://1z1euk35x7oy36s8we4dr6lo-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/twitter_logo-300x300.png"
             alt="logo"
           /> */}
-          <h3>Meet the Authors</h3>
-        </div>
-        <div className={styles.authorBody}>
-          {AuthorList.map((props, idx) => (
-            <Author key={idx} {...props} />
-          ))}
+            <h3>Meet the Authors</h3>
+          </div>
+          <div className={styles.authorBody}>
+            {AuthorList.map((props, idx) => (
+              <Author key={idx} {...props} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
