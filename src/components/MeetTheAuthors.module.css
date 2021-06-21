@@ -1,0 +1,114 @@
+.authorSection {
+  margin-bottom: 4rem;
+  display: block;
+  margin: 0;
+}
+.authorContainer {
+  text-align: center;
+  /* width: 75%; */
+  margin: auto;
+  margin-bottom: 4rem;
+  padding: 8px;
+}
+.authorHeader {
+  width: 100%;
+  /* padding-top: 2rem; */
+  padding-bottom: 3rem;
+  /* padding-left: 4px; */
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* .authorHeader > img {
+  height: 2.8rem;
+  border-radius: 2.8rem;
+  margin-right: 2rem;
+  
+} */
+
+.authorHeader > h3 {
+  margin: 0;
+  font-size: 2.8rem;
+
+  /* background: -webkit-linear-gradient(
+    0deg,
+    rgba(220, 38, 38, 1) 0%,
+    rgba(153, 27, 27, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.authorBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-width: 940px; */
+  /* margin-left: 0px; */
+  margin: auto;
+}
+.authorImg {
+  height: 114px;
+  border-radius: 100px;
+  margin: 10px 13px;
+}
+@media screen and (max-width: 1000px) {
+  .authorContainer {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #authorContainer {
+    width: 100%;
+    margin: auto;
+  }
+  .authorHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .authorHeader > img {
+    margin-bottom: 1rem;
+    /* padding-left: 0px; */
+  }
+}
+@media screen and (max-width: 481px) {
+  .authorHeader > h3 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+  /* .authorHeader > img {
+    height: 2.8rem;
+    border-radius: 2.8rem;
+  } */
+  /* .authorImg {
+    margin: 10px 0px;
+  } */
+  .authorBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* max-width: 940px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .authorImg {
+    height: 70px;
+    border-radius: 70px;
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .authorBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 940px;
+    /* margin-left: 0px; */
+    margin: auto;
+  }
+}

@@ -1,0 +1,17 @@
+.talkSection {
+  margin-bottom: 4rem;
+}
+.exampleWrapper {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .talkVideo {
+    width: 100%;
+    height: 300px;
+  }
+
+  .exampleWrapper {
+    padding-bottom: 1rem;
+  }
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -6,6 +6,10 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import Head from "@docusaurus/Head";
+import { FaGithub } from "react-icons/fa";
+import MeetTheAuthors from "../components/MeetTheAuthors";
+import MoreProjects from "../components/MoreProjects";
+import TalkSection from "../components/TalkSection";
 
 const SVGs = {
   Accessible: (
@@ -20,16 +24,16 @@ const SVGs = {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         opacity="0.5"
       >
         <g
           id="Landing-page-ReactNative-Aria-Edit1"
           transform="translate(-176.000000, -962.000000)"
           className="feature-icons"
-          fill-rule="nonzero"
+          fillRule="nonzero"
         >
           <g id="4" transform="translate(139.000000, 963.000000)">
             <g id="accessibility" transform="translate(38.000000, 0.000000)">
@@ -37,7 +41,7 @@ const SVGs = {
                 d="M50,100 C77.6142375,100 100,77.6142375 100,50 C100,22.3857625 77.6142375,0 50,0 C22.3857625,0 0,22.3857625 0,50 C0.031490257,77.6011832 22.3988168,99.9685098 50,100 Z M50,3.57142857 C75.641792,3.57142857 96.4285714,24.358208 96.4285714,50 C96.4285714,75.641792 75.641792,96.4285714 50,96.4285714 C24.358208,96.4285714 3.57142857,75.641792 3.57142857,50 C3.60095007,24.3704463 24.3704462,3.60095007 50,3.57142857 Z"
                 id="Shape"
                 className="feature-icons--stroke"
-                stroke-width="2"
+                strokeWidth="2"
               ></path>
               <path
                 d="M50.0084263,21 C54.6431608,21 58.4003555,24.7571947 58.4003555,29.3919292 C58.4003555,34.0266637 54.6431608,37.7838583 50.0084263,37.7838583 C45.3736918,37.7838583 41.6164971,34.0266637 41.6164971,29.3919292 C41.621123,24.7591121 45.3756092,21.0046259 50.0084263,21 Z M30.52936,39.1937024 L45.2404119,40.5140326 C45.7392655,40.5587896 46.2395176,40.5811681 46.7411685,40.5811681 L53.275684,40.5811681 C53.7764025,40.5811681 54.2766547,40.5587896 54.7764407,40.5140326 L69.4623168,39.1951011 L69.4846952,39.1951011 C71.7954966,39.0189812 73.8115445,40.7494825 73.9876646,43.0602838 C74.1637844,45.3710851 72.4332832,47.3871333 70.1224818,47.5632531 L58.2716792,48.6388187 C57.5514416,48.7039039 56.9995844,49.3073082 56.9989033,50.0304803 L56.9989033,53.2473865 C56.998567,53.9471411 57.129508,54.6407483 57.384932,55.2922199 L64.1390363,72.4956747 C65.0111262,74.6031595 64.0400605,77.0213094 61.9526094,77.9403202 C59.8651584,78.859331 57.4258932,77.9425963 56.4604212,75.8762235 L49.9846491,60.1455523 L43.5746139,75.8272706 C42.983731,77.2229848 41.6860833,78.1915628 40.1799542,78.3610805 C38.6738252,78.530598 37.1933402,77.874704 36.3069904,76.645255 C35.4206405,75.4158061 35.2662075,73.8039179 35.902992,72.4285393 L42.6333192,55.2866253 C42.8872853,54.635845 43.0168066,53.9431669 43.015152,53.2445892 L43.015152,50.027683 C43.0144708,49.3045109 42.4626136,48.7011066 41.742376,48.6360214 L29.8677963,47.5604558 C27.5573811,47.3789288 25.8315764,45.3588104 26.0131036,43.0483952 C26.1946307,40.7379801 28.2147489,39.0121754 30.525164,39.1937024 L30.52936,39.1937024 Z"
@@ -61,16 +65,16 @@ const SVGs = {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         opacity="0.5"
       >
         <g
           id="Landing-page-ReactNative-Aria-Edit1"
           transform="translate(-478.000000, -958.000000)"
           className="feature-icons"
-          fill-rule="nonzero"
+          fillRule="nonzero"
         >
           <g id="4-copy-4" transform="translate(440.000000, 958.000000)">
             <g id="compose" transform="translate(38.000000, 0.000000)">
@@ -108,9 +112,9 @@ const SVGs = {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         opacity="0.5"
       >
         <g
@@ -123,14 +127,14 @@ const SVGs = {
               <path
                 d="M50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 C31.8412294,100 15.9433612,90.3199263 7.18514783,75.8385314 L10.7694026,75.8380052 C19.1714751,88.5694003 33.6047404,96.969697 50,96.969697 C75.9406473,96.969697 96.969697,75.9406473 96.969697,50 C96.969697,24.0593527 75.9406473,3.03030303 50,3.03030303 C24.0593527,3.03030303 3.03030303,24.0593527 3.03030303,50 C3.03030303,55.3611912 3.92851867,60.5125928 5.58267194,65.311927 L2.38813684,65.3119987 C0.837425448,60.48635 0,55.3409706 0,50 C0,22.3857625 22.3857625,0 50,0 Z"
                 id="Combined-Shape"
-                stroke-width="2"
+                strokeWidth="2"
                 className="feature-icons"
-                fill-rule="nonzero"
+                fillRule="nonzero"
               ></path>
               <g
                 id="Group"
                 transform="translate(20.289855, 24.637681)"
-                stroke-width="2"
+                strokeWidth="2"
               >
                 <rect
                   id="Rectangle-Copy"
@@ -175,9 +179,9 @@ const SVGs = {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         opacity="0.5"
       >
         <g transform="translate(-1140.000000, -960.000000)">
@@ -187,7 +191,7 @@ const SVGs = {
                 id="mixer"
                 transform="translate(21.000000, 28.000000)"
                 className="feature-icons"
-                fill-rule="nonzero"
+                fillRule="nonzero"
               >
                 <path
                   d="M7.67292788,29.2439275 C7.00414424,29.2439275 6.46194833,29.7741048 6.46194833,30.4284165 L6.46194833,41.7214924 C6.46194833,43.5599773 8.23562971,45 10.5,45 C12.7643703,45 14.5380517,43.5599773 14.5380517,41.7214924 L14.5380517,18.5070876 C18.136437,18.3030397 21,15.3876174 21,11.8319394 C21,8.27626144 18.136437,5.36099715 14.5380517,5.15679125 L14.5380517,3.26476751 C14.5380517,1.43402133 12.7643703,0 10.5,0 C8.23562971,0 6.46194833,1.43402133 6.46194833,3.26476751 L6.46194833,5.15679125 C2.86356297,5.36083921 0,8.27626144 0,11.8319394 C0,15.3876174 2.86356297,18.3028817 6.46194833,18.5070876 L6.46194833,24.7796675 C6.46194833,25.4339792 7.00414424,25.9641565 7.67292788,25.9641565 C8.34171152,25.9641565 8.88390743,25.4339792 8.88390743,24.7796675 L8.88390743,18.5195642 L12.116254,18.5195642 L12.116254,41.7214924 C12.116254,42.1509092 11.4250269,42.631022 10.5001615,42.631022 C9.57529602,42.631022 8.88406889,42.1509092 8.88406889,41.7214924 L8.88406889,30.4284165 C8.88390743,29.7741048 8.34171152,29.2439275 7.67292788,29.2439275 Z M10.5,2.36897797 C11.4101722,2.36897797 12.1160926,2.85051223 12.1160926,3.26476751 L12.1160926,5.14431463 L8.88390743,5.14431463 L8.88390743,3.26476751 C8.88390743,2.85051223 9.58982777,2.36897797 10.5,2.36897797 Z M2.4219591,11.8319394 C2.4219591,9.45064278 4.41523143,7.5132926 6.86528525,7.5132926 L14.1348762,7.5132926 C16.58493,7.5132926 18.5782024,9.45064278 18.5782024,11.8319394 C18.5782024,14.2132361 16.58493,16.1505863 14.1348762,16.1505863 C13.4250807,16.1060495 7.73121636,16.1752236 6.86528525,16.1505863 C4.41506997,16.1504283 2.4219591,14.2132361 2.4219591,11.8319394 Z"
@@ -205,7 +209,7 @@ const SVGs = {
               <circle
                 id="Oval"
                 className="feature-icons--stroke"
-                stroke-width="5"
+                strokeWidth="5"
                 cx="50"
                 cy="50"
                 r="50"
@@ -262,6 +266,32 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+
+  const [stargazers, setStargazers] = useState(null);
+  React.useEffect(() => {
+    fetch("https://api.github.com/repos/GeekyAnts/react-native-aria")
+      .then((res) => res.json())
+      .then((data) => setStargazers(data.stargazers_count))
+      .catch(function (error) {
+        console.log(error.message, error);
+      });
+  }, []);
+  const GitStarCounter = () => (
+    <div className="gitStarCounterContainer" id="gitStarCounterContainer">
+      <div className="gitStarCounterInnerDiv" id="gitStarCounterInnerDiv">
+        <a
+          className="button"
+          id="button"
+          href="https://github.com/GeekyAnts/react-native-aria"
+          target="_blank"
+        >
+          <FaGithub style={{ fontSize: "46px", color: "#fff" }} />
+
+          <div className="stargazers">{stargazers} Stars</div>
+        </a>
+      </div>
+    </div>
+  );
   return (
     <Layout
       title={`${siteConfig.title}`}
@@ -329,7 +359,7 @@ function Home() {
                 </a>{" "}
                 to React Native (Web, Android & iOS)
               </p>
-              <div className={styles.buttons}>
+              <div className={styles.buttons} id={styles.buttons}>
                 <Link
                   className={clsx(
                     "button button--outline button--secondary button--lg",
@@ -339,14 +369,11 @@ function Home() {
                 >
                   Get Started
                 </Link>
+                <GitStarCounter />
               </div>
             </div>
             <div className="col col--6 hero-image">
-              <img
-                style={{ height: "20rem" }}
-                src="img/logo-large.png"
-                alt="React Native Aria logo"
-              ></img>
+              <img src="img/logo-large.png" alt="React Native Aria logo"></img>
             </div>
           </div>
         </div>
@@ -383,6 +410,9 @@ function Home() {
             />
           </div>
         </section>
+        <TalkSection />
+        <MoreProjects />
+        <MeetTheAuthors />
       </main>
     </Layout>
   );
