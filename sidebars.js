@@ -35,6 +35,12 @@ module.exports = {
       label: "Overlays",
       items: ["OverlayContainer", "useOverlayPosition"],
     },
+    {
+      type: "category",
+      collapsed: false,
+      label: "Readme",
+      items: ["Readme"],
+    },
     // {
     //   type: "category",
     //   label: "Collections",
