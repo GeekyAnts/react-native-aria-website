@@ -5,25 +5,25 @@ import styles from "./MoreProjects.module.css";
 const products = [
   {
     product: "NativeBase",
-    image: ".././static/img/Nativebaselogo.png",
+    image: "/img/Nativebaselogo.png",
     link:
       "https://nativebase.io/?utm_source=RN_ARIA&utm_medium=Landing_Page&utm_campaign=RN_ARIA",
   },
   {
     product: "Formst",
-    image: ".././static/img/FormstLogo-dark.png",
+    image: "/img/FormstLogo-dark.png",
     link:
       "https://formst.geekyants.com/?utm_source=RN_ARIA&utm_medium=Landing_Page&utm_campaign=RN_ARIA",
   },
   {
     product: "SyncState",
-    image: ".././static/img/SyncStateLogoWithBackground.png",
+    image: "/img/SyncStateLogoWithBackground.png",
     link:
       "https://syncstate.github.io/?utm_source=RN_ARIA&utm_medium=Landing_Page&utm_campaign=RN_ARIA",
   },
   {
     product: "React Pluggable",
-    image: ".././static/img/react-pluggable.png",
+    image: "/img/react-pluggable.png",
     link:
       "https://react-pluggable.github.io/?utm_source=RN_ARIA&utm_medium=Landing_Page&utm_campaign=RN_ARIA",
   },
